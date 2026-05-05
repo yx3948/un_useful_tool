@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://use.typekit.net/ilr5ecv.css">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un Useless Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 开机动画 -->
+  <div id="boot-screen">
+    <img class="boot-img" src="asset/boot.png" alt="">
+    <div class="boot-text">imagine having your own computer one day...click to claim!!</div>
+    <div class="boot-loader">
+      <div class="boot-bar"></div>
+    </div>
+  </div>
+
+  <!-- 桌面 -->
+  <div id="desktop">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div id="icon-grid"></div>
+    <div id="windows-container"></div>
+    <div id="taskbar">
+      <button id="start-btn" onclick="toggleStart()"><span style="font-size:18px">🪟</span> start</button>
+      <div class="taskbar-sep taskbar-sep-dark"></div>
+      <div class="taskbar-sep taskbar-sep-light"></div>
+      <div id="taskbar-windows"></div>
+      <div id="systray">
+        <span>🔊</span>
+        <span id="systray-clock"></span>
+      </div>
+    </div>
+    <div id="start-menu">
+      <div id="start-menu-header">
+        <div class="avatar">👩</div>
+        <span class="username">Un UsefulUser</span>
+      </div>
+      <div id="start-menu-body"></div>
+      <div id="start-menu-footer">
+        <span>🔌 Turn Off Computer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 音效 -->
+  <audio id="click-sound" src="asset/click.mp3" preload="auto"></audio>
+  <audio id="ding-sound" src="asset/ding.mp3" preload="auto"></audio>
+  <audio id="pw-sound" src="asset/3.mp3" preload="auto"></audio>
+  <audio id="cam-sound" src="asset/2.mp3" preload="auto"></audio>
+  <audio id="logon-sound" src="asset/logon.mp3" preload="auto"></audio>
+  <audio id="bgm" src="asset/bgm.mp3" preload="auto" loop></audio>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
